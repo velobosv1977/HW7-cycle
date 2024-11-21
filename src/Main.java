@@ -10,7 +10,7 @@ public class Main {
         int month = 0;
         while (sum < dreamSum) {
             sum += vklad;
-            sum = sum + sum / 100;
+            sum = sum + sum / 100; // в чём ошибка? По условию 12% годовых или 1% в месяц. В разборе такие же значения сумм
             month++;
             System.out.println("Месяц " + month + " сумма накоплени равна " + sum + " рублей");
         }
